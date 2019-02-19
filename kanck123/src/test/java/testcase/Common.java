@@ -12,4 +12,10 @@ public class Common {
 		 {  driver.findElement(MobileBy.xpath("//*[@class='android.widget.Button'][2]")).click();
 		 }
 		}
+	public void scrollAndSearch(AndroidDriver driver, String text){
+		String uiSelector = "new UiSelector().textMatches(\"" + text + "\")";
+		String command = "new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView("+ uiSelector + ");";
+		driver.findElementByAndroidUIAutomator(command).click();
+	
+	}
 }

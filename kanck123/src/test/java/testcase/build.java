@@ -13,7 +13,7 @@ import io.appium.java_client.remote.MobileCapabilityType;
 public class build {
 	public static AndroidDriver driver;
 	public static void main(String[] args) throws MalformedURLException, InterruptedException, NullPointerException {
-		File app = new File("/home/xelpmoc-10/Downloads/app-release.apk");
+		File app = new File("/home/xelpmoc-10/Downloads/Knack20190219.apk");
 		DesiredCapabilities capabilities=new DesiredCapabilities();
 		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Android");
 		capabilities.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());

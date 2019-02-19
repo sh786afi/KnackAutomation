@@ -51,24 +51,15 @@ public class Login {
 		Thread.sleep(1000);
 		driver.pressKey(new KeyEvent(AndroidKey.ENTER));
 		Thread.sleep(1000);	
-//		driver.findElement(MobileBy.xpath(obj.getProperty("forgetpass"))).click();
-//		driver.findElement(MobileBy.xpath(obj.getProperty("signup"))).click();
 		driver.findElement(MobileBy.xpath(obj.getProperty("signIn"))).click();
 		Thread.sleep(5000);
-		test.plusMentuTest(driver);
+		//test.plusMentuTest(driver);
+		
 		//Business Dashboard
 		//scroll find and click
-//		String text="Client Added";
-//		String uiSelector = "new UiSelector().textMatches(\"" + text + "\")";
-//		String command = "new UiScrollable(new UiSelector().scrollable(true).instance(0)).scrollIntoView("+ uiSelector + ");";
-//		driver.findElementByAndroidUIAutomator(command).click();
-		
-//		driver.findElement(MobileBy.xpath(obj.getProperty("bookDb"))).click();
-//		Thread.sleep(5000);
-//		driver.findElement(MobileBy.xpath(obj.getProperty("paymentDb"))).click();
-//		Thread.sleep(5000);
-//		driver.findElement(MobileBy.xpath(obj.getProperty("clientDb"))).click();
-		//Thread.sleep(5000);
+		//com.scrollAndSearch(driver, "Book Yoga");
+		//test.addClientPhone(driver);
+		test.addClientManual(driver);
 		
 		//driver.quit();
 		}
